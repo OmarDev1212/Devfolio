@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+    --main-color: #0078FF;
+    --second-color: #CDE1F8;
+}
+
+.nav-item:hover .hover-nav {
+    width: 80%;
+    transition: all 0.5s ease-in;
+    background-color: white;
+}
+
+.home {
+    background-image: url("../images/hero-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* ...existing code... */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    /* higher than .home and .layer */
+}
+
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 2;
+    /* still lower than navbar */
+
+}
+
+/* ...existing code... */
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+header h2:after {
+    content: "";
+    animation-name: skills;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skills {
+    1% {
+        content: "|"
+    }
+
+    2% {
+        content: "D|"
+    }
+
+    3% {
+        content: "De|"
+    }
+
+    4% {
+        content: "Des|"
+    }
+
+    5% {
+        content: "Desi|"
+    }
+
+    6% {
+        content: "Desig|"
+    }
+
+    7% {
+        content: "Design|"
+    }
+
+    8% {
+        content: "Designe|"
+    }
+
+    9% {
+        content: "Designer|"
+    }
+
+    10% {
+        content: "Designer"
+    }
+
+    11% {
+        content: "Designer|"
+    }
+
+    12% {
+        content: "Designer"
+    }
+
+    13% {
+        content: "Designer|"
+    }
+
+    14% {
+        content: "Designer"
+    }
+
+    15% {
+        content: "Designer|"
+    }
+
+    16% {
+        content: "Designe|"
+    }
+
+    17% {
+        content: "Design|"
+    }
+
+    18% {
+        content: "Desig|"
+    }
+
+    19% {
+        content: "Desi|"
+    }
+
+    20% {
+        content: "Des|"
+    }
+
+    21% {
+        content: "De|"
+    }
+
+    22% {
+        content: "D|"
+    }
+
+    23% {
+        content: "De|"
+    }
+
+    24% {
+        content: "Dev|"
+    }
+
+    25% {
+        content: "Deve|"
+    }
+
+    26% {
+        content: "Devel|"
+    }
+
+    27% {
+        content: "Develo|"
+    }
+
+    28% {
+        content: "Develop|"
+    }
+
+    29% {
+        content: "Develope|"
+    }
+
+    30% {
+        content: "Developer|"
+    }
+
+    31% {
+        content: "Developer"
+    }
+
+    32% {
+        content: "Developer|"
+    }
+
+    33% {
+        content: "Developer"
+    }
+
+    34% {
+        content: "Developer|"
+    }
+
+    35% {
+        content: "Developer"
+    }
+
+    36% {
+        content: "Developer|"
+    }
+
+    37% {
+        content: "Develope|"
+    }
+
+    38% {
+        content: "Develop|"
+    }
+
+    39% {
+        content: "Develo|"
+    }
+
+    40% {
+        content: "Devel|"
+    }
+
+    41% {
+        content: "Deve|"
+    }
+
+    42% {
+        content: "Dev|"
+    }
+
+    43% {
+        content: "De|"
+    }
+
+    44% {
+        content: "D|"
+    }
+
+    45% {
+        content: "|"
+    }
+
+    46% {
+        content: "F|"
+    }
+
+    47% {
+        content: "Fr|"
+    }
+
+    48% {
+        content: "Fre|"
+    }
+
+    49% {
+        content: "Free|"
+    }
+
+    50% {
+        content: "Freel|"
+    }
+
+    51% {
+        content: "Freela|"
+    }
+
+    52% {
+        content: "Freelan|"
+    }
+
+    53% {
+        content: "Freelanc|"
+    }
+
+    54% {
+        content: "Freelance|"
+    }
+
+    55% {
+        content: "Freelancer|"
+    }
+
+    56% {
+        content: "Freelancer"
+    }
+
+    57% {
+        content: "Freelancer|"
+    }
+
+    58% {
+        content: "Freelancer"
+    }
+
+    59% {
+        content: "Freelancer|"
+    }
+
+    60% {
+        content: "Freelancer"
+    }
+
+    61% {
+        content: "Freelancer|"
+    }
+
+    62% {
+        content: "Freelance|"
+    }
+
+    63% {
+        content: "Freelanc|"
+    }
+
+    64% {
+        content: "Freelan|"
+    }
+
+    65% {
+        content: "Freela|"
+    }
+
+    66% {
+        content: "Freel|"
+    }
+
+    67% {
+        content: "Free|"
+    }
+
+    68% {
+        content: "Fre|"
+    }
+
+    69% {
+        content: "Fr|"
+    }
+
+    70% {
+        content: "F|"
+    }
+
+    71% {
+        content: "P|"
+    }
+
+    72% {
+        content: "Ph|"
+    }
+
+    73% {
+        content: "Phoh|"
+    }
+
+    74% {
+        content: "Phot|"
+    }
+
+    75% {
+        content: "Photo|"
+    }
+
+    76% {
+        content: "Photog|"
+    }
+
+    77% {
+        content: "Photogr|"
+    }
+
+    78% {
+        content: "Photogra|"
+    }
+
+    79% {
+        content: "Photograp|"
+    }
+
+    80% {
+        content: "Photograph|"
+    }
+
+    81% {
+        content: "Photographe|"
+    }
+
+    82% {
+        content: "Photographer|"
+    }
+
+    83% {
+        content: "Photographer"
+    }
+
+    84% {
+        content: "Photographer|"
+    }
+
+    85% {
+        content: "Photographer"
+    }
+
+    86% {
+        content: "Photographer|"
+    }
+
+    87% {
+        content: "Photographer"
+    }
+
+    88% {
+        content: "Photographer|"
+    }
+
+    89% {
+        content: "Photographe|"
+    }
+
+    90% {
+        content: "Photograph|"
+    }
+
+    91% {
+        content: "Photograp|"
+    }
+
+    92% {
+        content: "Photogra|"
+    }
+
+    93% {
+        content: "Photogr|"
+    }
+
+    94% {
+        content: "Photog|"
+    }
+
+    95% {
+        content: "Photo|"
+    }
+
+    96% {
+        content: "Phot|"
+    }
+
+    97% {
+        content: "Pho|"
+    }
+
+    98% {
+        content: "Ph|"
+    }
+
+    99% {
+        content: "P|"
+    }
+
+    100% {
+        content: "|"
+    }
+}
+
+/* About section */
+#About h6 ::after {
+    content: '';
+    width: 100%;
+    background-color: var(--second-color);
+    opacity: 0.5;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#About h6::before {
+    content: '';
+    width: 85%;
+    background-color: var(--main-color);
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+#About h3::after {
+    content: '';
+    width: 15%;
+    background-color: var(--main-color);
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
+/* Services section */
+
+#Services .service-header p::after {
+    content: '';
+    width: 5%;
+    background-color: var(--main-color);
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+
+
+.icon {
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+#Services .card:hover .icon {
+    border: 10px solid var(--second-color);
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Work section */
+
+#Work {
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.work-layer {
+    background-color: rgba(0, 120, 255, 0.8);
+    padding: 70px 0px;
+}
+
+#Work .icon {
+
+    border: 10px solid var(--second-color) !important;
+}
+
+/* Portofilo Section */
+.portfolio-header p::after {
+    content: '';
+    width: 5%;
+    background-color: var(--main-color);
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+#Portfolio .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.text-info {
+    color: var(--main-color) !important;
+}
+.card img {
+    transition: transform 0.3s ease;
+}
+.card:hover img{
+    transform: scale(1.1);
+    
+}
+
+/* Testimonial section */
+.testimonial {
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.testimonial .layer {
+    background-color: rgba(0, 120, 255, 0.8);
+    ;
+    padding: 20px 0px;
+}
+
+/* Contact section */
+#contact .portfolio-header h1::after {
+    content: '';
+    width: 20%;
+    background-color: var(--main-color);
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    right: 5%;
+    margin-top: 30px;
+}
+
+.list-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-icon li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.list-icon li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.list-icon li:hover span {
+    background-color: var(--second-color)
+}
+
+.hover-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hover-icon:hover {
+    background-color: var(--main-color);
+    transform: scale(1.1);
+}
+
+#contact .icon {
+    border: 2px solid var(--main-color);
+
+    width: 20px;
+    height: 20px;
+    transition: color 0.3s ease;
+    border-radius: 50%;
+}
+
+.hover-icon:hover .icon {
+    color: var(--second-color);
+}
